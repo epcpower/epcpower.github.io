@@ -29,6 +29,9 @@ EPC supports the following function codes:
 - Read Holding registers (3)
 - Write Multiple registsers (16)
 
+## Sunspec header
+The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53 0x75 0x6E 0x53.)  The EPC model starts at holding register 0.  To confirm proper comms setup, make sure that these characters are received when reading the first two holding holding registers starting at address 0.
+
 ## Pysunspec demo script
 Install python 3.x if you don't already have it.
 Assuming you're on Windows, use the 32 bit version
