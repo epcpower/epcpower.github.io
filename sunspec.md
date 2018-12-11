@@ -3,7 +3,7 @@
 # Overview
 EPC Power implements the Sunspec interface, which provides a mapping of various
 parameter groupings referred to as models, onto Modbus holding registers.
-Further documentation can be found at https://sunspec.org/
+Further documentation can be found at [https://sunspec.org/](https://sunspec.org/)
 Presently, EPC implements the following models:
 - Common (1)
 - Serial (17)
@@ -36,16 +36,14 @@ The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53
 Install python 3.x if you don't already have it.
 Assuming you're on Windows, use the 32 bit version
 
-download the pysunspec package
-https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl
+download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl)
 
 install pysunspec via a command prompt (cmd.exe or powershell) in the
 same directory as the downloaded .whl file
   py -3.6 -m pip install ./pysunspec-1.1.0.dev2.post66-py2.py3-none-
 any.whl
 
-download the latest demo script and smdx files
-  https://github.com/altendky/st/archive/sunspec.zip
+download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip)
 
 extract above .zip and open prompt into the extracted directory with the 
 Pysunspec_demo.py file:
