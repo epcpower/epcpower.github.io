@@ -49,5 +49,5 @@ Pysunspec_demo.py file:
   py -3.7 .\Pysunspec_demo.py --serial-port COM3
   (use correct com port number for your system)
 
-#Model documentation
+# Model documentation
 TBD
