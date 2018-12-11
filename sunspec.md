@@ -33,21 +33,13 @@ EPC supports the following function codes:
 The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53 0x75 0x6E 0x53.)  The EPC model starts at holding register 0.  To confirm proper comms setup, make sure that these characters are received when reading the first two holding holding registers starting at address 0.
 
 ## Pysunspec demo script
-Install python 3.x if you don't already have it.
-Assuming you're on Windows, use the 32 bit version
-
-download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl)
-
-install pysunspec via a command prompt (cmd.exe or powershell) in the
-same directory as the downloaded .whl file
-  py -3.6 -m pip install ./pysunspec-1.1.0.dev2.post66-py2.py3-none-
-any.whl
-
-download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip)
-
-extract above .zip and open prompt into the extracted directory with the 
-Pysunspec_demo.py file:
-  py -3.7 .\Pysunspec_demo.py --serial-port COM3
+1. Install python 3.x if you don't already have it. 
+2. Download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl)
+3. Install pysunspec via a command prompt (cmd.exe or powershell) in the same directory as the downloaded .whl file:
+  "py -3.6 -m pip install ./pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
+4. Download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip)
+5. Extract above .zip and open prompt into the extracted directory with the Pysunspec_demo.py file:
+  "py -3.7 .\Pysunspec_demo.py --serial-port COM3"
   (use correct com port number for your system)
 
 # Model documentation
