@@ -34,13 +34,22 @@ The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53
 
 ## Pysunspec demo script
 1. Install python 3.x if you don't already have it. 
-2. Download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl)
-3. Install pysunspec via a command prompt (cmd.exe or powershell) in the same directory as the downloaded .whl file:
-  "py -3.6 -m pip install ./pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
-4. Download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip)
-5. Extract above .zip and open prompt into the extracted directory with the Pysunspec_demo.py file:
-  "py -3.7 .\Pysunspec_demo.py --serial-port COM3"
-  (use correct com port number for your system)
+2. Create a directory in which to install pysunspec.
+3. Download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl) into the directory you created in step 2.
+4. Download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip) and copy them into the directory you created in step 2.
+5. In the same directory, create a virtual environment using the following command:
+  "python -m venv env"  This will create a directory named env in which you can install pysunspec and all of its dependencies.
+6. In the same directory, install pysunspec via a command prompt (cmd.exe, powershell, bash etc)
+On Windows:
+  ".\env\Scripts\python -m pip install .\pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
+On Mac, Linux, or Unix:
+  "env/bin/python -m pip install pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
+7. Run the demo script with the following command:
+On Windows:
+  ".\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --serial-port COM3"
+On Mac, Linux, or Unix:
+  "/env/bin\python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0"
+(use correct serial port number for your system)
 
 # Model documentation
 TBD
