@@ -37,8 +37,8 @@ The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53
 2. Create a directory in which to install pysunspec.
 3. Download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl) into the directory you created in step 2.
 4. Download the latest demo script and [smdx files](https://github.com/altendky/st/archive/sunspec.zip) and copy them into the directory you created in step 2.
-5. In the same directory, create a virtual environment using the following command:
-  "python -m venv env"  This will create a directory named env in which you can install pysunspec and all of its dependencies.
+5. In the same directory, create a virtual environment using the following command: `python -m venv env`
+This will create a directory named env in which you can install pysunspec and all of its dependencies.
 6. In the same directory, install pysunspec via a command prompt (cmd.exe, powershell, bash etc)
 - On Windows: `.\env\Scripts\python -m pip install .\pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
 - On Mac, Linux, or Unix: `env/bin/python -m pip install pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
