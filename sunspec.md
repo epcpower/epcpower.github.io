@@ -40,15 +40,11 @@ The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53
 5. In the same directory, create a virtual environment using the following command:
   "python -m venv env"  This will create a directory named env in which you can install pysunspec and all of its dependencies.
 6. In the same directory, install pysunspec via a command prompt (cmd.exe, powershell, bash etc)
-On Windows:
-  ".\env\Scripts\python -m pip install .\pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
-On Mac, Linux, or Unix:
-  "env/bin/python -m pip install pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl"
+- On Windows: `.\env\Scripts\python -m pip install .\pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
+- On Mac, Linux, or Unix: `env/bin/python -m pip install pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
 7. Run the demo script with the following command:
-On Windows:
-  ".\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --serial-port COM3"
-On Mac, Linux, or Unix:
-  "/env/bin\python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0"
+- On Windows: `.\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --serial-port COM3`
+- On Mac, Linux, or Unix: `/env/bin\python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0`
 (use correct serial port number for your system)
 
 # Model documentation
