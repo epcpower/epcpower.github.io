@@ -1,3 +1,5 @@
+## Sunspec Interface Quick-Start Guide
+
 # Overview
 EPC Power implements the Sunspec interface, which provides a mapping of various
 parameter groupings referred to as models, onto Modbus holding registers.
@@ -46,3 +48,6 @@ extract above .zip and open prompt into the extracted directory with the
 Pysunspec_demo.py file:
   py -3.7 .\Pysunspec_demo.py --serial-port COM3
   (use correct com port number for your system)
+
+#Model documentation
+TBD
