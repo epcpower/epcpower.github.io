@@ -3,7 +3,7 @@
 # Overview
 EPC Power implements the Sunspec interface, which provides a mapping of various
 parameter groupings referred to as models, onto Modbus holding registers.
-Further documentation can be found at https://sunspec.org/
+Further documentation can be found at https://sunspec.org/.
 Presently, EPC implements the following models:
 - Common (1)
 - Serial (17)
@@ -27,14 +27,14 @@ with the EPyQ tool in the 'Parameters' tab under Communication->Serial.
 ## Modbus function codes
 EPC supports the following function codes:
 - Read Holding registers (3)
-- Write Multiple registsers (16)
+- Write Multiple registers (16)
 
 ## Sunspec header
 The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53 0x75 0x6E 0x53.)  The EPC model starts at holding register 0.  To confirm proper comms setup, make sure that these characters are received when reading the first two holding holding registers starting at address 0.
 
 ## Pysunspec demo script
 Install python 3.x if you don't already have it.
-Assuming you're on Windows, use the 32 bit version
+Assuming you're on Windows, use the 32 bit version.
 
 download the pysunspec package
 https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl
