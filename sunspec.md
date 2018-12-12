@@ -3,7 +3,7 @@
 # Overview
 EPC Power implements the Sunspec interface, which provides a mapping of various
 parameter groupings referred to as models, onto Modbus holding registers.
-Further documentation can be found at [https://sunspec.org/](https://sunspec.org/)
+Further documentation can be found at [https://sunspec.org/](https://sunspec.org/).
 Presently, EPC implements the following models:
 - Common (1)
 - Serial (17)
@@ -27,7 +27,7 @@ with the EPyQ tool in the 'Parameters' tab under Communication->Serial.
 ## Modbus function codes
 EPC supports the following function codes:
 - Read Holding registers (3)
-- Write Multiple registsers (16)
+- Write Multiple registers (16)
 
 ## Sunspec header
 The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53 0x75 0x6E 0x53.)  The EPC model starts at holding register 0.  To confirm proper comms setup, make sure that these characters are received when reading the first two holding holding registers starting at address 0.
@@ -47,5 +47,10 @@ This will create a directory named env in which you can install pysunspec and al
 - On Mac, Linux, or Unix: `env/bin/python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0`
 (use correct serial port number for your system)
 
+## Other useful debugging tools
+- QModbus is an open-source, cross-platform Modbus RTU and TCP master/client with an easy to use GUI.  The latest release is available on [Github](https://github.com/ed-chemnitz/qmodbus/releases).
+- [MinimalModbus](https://minimalmodbus.readthedocs.io/en/master/) is a command-line tool for Modbus RTU.
+- [Wireshark](https://www.wireshark.org/) is an open-source, cross-platform network analyzer that can log, filter and parse Modbus TCP traffic.
+- [IO Ninja](http://ioninja.com/downloads.html) is a cross-platform network monitor and sniffer that can capture both Modbus RTU and Modbus TCP traffic.  A free evaluation version is available for download.  [Here is a video](https://www.youtube.com/watch?v=i5TitGHQtjg) demonstrating how to setup the Modbus RTU analyzer functionality in IO Ninja.
 # Model documentation
 TBD
