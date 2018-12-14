@@ -45,7 +45,9 @@ This will create a directory named env in which you can install pysunspec and al
 7. Run the demo script with the following command:
 - On Windows: `.\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --serial-port COM3`
 - On Mac, Linux, or Unix: `env/bin/python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0`
-(use correct serial port number for your system)
+If you are connected via a Modbus TCP gateway, replace the serial-port parameter with an ip parameter e.g:
+`.\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --ip 192.168.1.1`
+(use correct serial port number or ip address for your system)
 
 ## Other useful debugging tools
 - QModbus is an open-source, cross-platform Modbus RTU and TCP master/client with an easy to use GUI.  The latest release is available on [Github](https://github.com/ed-chemnitz/qmodbus/releases).
@@ -53,4 +55,4 @@ This will create a directory named env in which you can install pysunspec and al
 - [Wireshark](https://www.wireshark.org/) is an open-source, cross-platform network analyzer that can log, filter and parse Modbus TCP traffic.
 - [IO Ninja](http://ioninja.com/downloads.html) is a cross-platform network monitor and sniffer that can capture both Modbus RTU and Modbus TCP traffic.  A free evaluation version is available for download.  [Here is a video](https://www.youtube.com/watch?v=i5TitGHQtjg) demonstrating how to setup the Modbus RTU analyzer functionality in IO Ninja.
 # Model documentation
-TBD
+Please refer to the Sunspec information Model Reference spreadsheet (named MODBUS_Sunspec-EPC.xls or similar) in the directory matching your [software release](https://github.com/epcpower/epcpower.github.io/tree/master/release_artifacts)
