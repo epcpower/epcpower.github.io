@@ -32,9 +32,9 @@ EPC supports the following function codes:
 ## Sunspec header
 The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53 0x75 0x6E 0x53.)  The EPC model starts at holding register 0.  To confirm proper comms setup, make sure that these characters are received when reading the first two holding holding registers starting at address 0.
 
-## Pysunspec demo script
+## Pysunspec demo package
 1. Install python 3.x if you don't already have it. 
-2. Create a directory in which to install pysunspec.
+2. Create a directory in which to install the demo.
 3. Follow the instructions [here](https://github.com/epcpower/sunspec-demo) to setup and run a demo that will run EPC inverters via the Sunspec interface.
 
 ## Other useful debugging tools
