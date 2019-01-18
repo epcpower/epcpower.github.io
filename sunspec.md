@@ -35,21 +35,7 @@ The start of a Sunspec interface is denoted by the ascii characters 'SunS' (0x53
 ## Pysunspec demo script
 1. Install python 3.x if you don't already have it. 
 2. Create a directory in which to install pysunspec.
-3. Download the [pysunspec package](https://ci.appveyor.com/api/buildjobs/da3eo9j30a8ogop7/artifacts/dist%2Fpysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl) into the directory you created in step 2.
-4. Copy the demo script and EPC vendor specific model xml files matching your [software release](https://github.com/epcpower/epcpower.github.io/tree/master/release_artifacts) into the directory you created in step 2.
-5. In the same directory, create a virtual environment using the following command: `python -m venv env`
-This will create a directory named env in which you can install pysunspec and all of its dependencies.
-6. In the same directory, install pysunspec via a command prompt (cmd.exe, powershell, bash etc)
-- On Windows: `.\env\Scripts\python -m pip install .\pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
-- On Mac, Linux, or Unix: `env/bin/python -m pip install pysunspec-1.1.0.dev2.post66-py2.py3-none-any.whl`
-7. Run the demo script with the following command:
-- On Windows: `.\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --serial-port COM3`
-- On Mac, Linux, or Unix: `env/bin/python Pysunspec_demo.py --invert-hw-enable --serial-port /dev/ttyUSB0`
-
-If you are connected via a Modbus TCP gateway, replace the serial-port parameter with an ip parameter e.g:
-`.\env\Scripts\python .\Pysunspec_demo.py --invert-hw-enable --ip 192.168.1.1`
-
-(Use the correct serial port number or ip address for your system)
+3. Follow the instructions [here](https://github.com/epcpower/sunspec-demo) to setup and run a demo that will run EPC inverters via the Sunspec interface.
 
 ## Other useful debugging tools
 - QModbus is an open-source, cross-platform Modbus RTU and TCP master/client with an easy to use GUI.  The latest release is available on [Github](https://github.com/ed-chemnitz/qmodbus/releases).
